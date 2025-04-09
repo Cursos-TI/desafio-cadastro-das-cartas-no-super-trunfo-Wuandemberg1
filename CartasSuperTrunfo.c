@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Estados
+// Desafio Super Trunfo - Países
 
 int main() {
 
