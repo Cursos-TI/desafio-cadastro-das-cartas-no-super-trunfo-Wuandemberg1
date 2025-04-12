@@ -30,14 +30,19 @@ int main() {
     printf("Digite o número de pontos turísticos\n");// descrição do que o usuário deve fazer
     scanf("%d", &pontos); // lê o número de pontos turísticos
     printf(("\n")); // pula uma linha
+
+    float densidade = populacao / area; // Declara uma variável para armazenar a densidade populacional da cidade
+    float capita = pib / populacao; // Declara uma variável para armazenar o PIB per capita da cidade
    
     printf("O nome do estado é: %s\n", estado); // Exibe o nome do estado
     printf("O código da carta é: %s\n", codigo); // Exibe o código da carta
     printf("O nome da cidade é: %s\n", cidade); // Exibe o nome da cidade
     printf("A população é: %d\n", populacao); // Exibe a população
-    printf("Á area é: %.2f\n", area); // Exibe a área
-    printf("O pib é: %.2f\n", pib); // Exibe o PIB
+    printf("Á area é: %.2f Km²\n", area); // Exibe a área
+    printf("O pib é: %.2f Reais\n", pib); // Exibe o PIB
     printf("O número de pontos turísticos é: %d\n", pontos); // Exibe o número de pontos turísticos
+    printf("A densiadade populacional é: %.2f Hab/km²\n", densidade); // Exibe a densidade populacional
+    printf("O pib per capita é: %.2f Reais\n", capita); // Exibe o PIB per capita
     printf(("\n")); // pula uma linha
 
 
@@ -71,15 +76,21 @@ int main() {
     printf("Digite o número de pontos turísticos\n");// descrição do que o usuário deve fazer
     scanf("%d", &pontos2); // lê o número de pontos turísticos
     printf(("\n")); // pula uma linha
+
+    
+    float densidade2 = populacao2 / area2; // Declara uma variável para armazenar a densidade populacional da cidade
+    float capita2 = pib2 / populacao2; // Declara uma variável para armazenar o PIB per capita da cidade
     
    
     printf("O nome do estado é: %s\n", estado2); // Exibe o nome do estado
     printf("O código da carta é: %s\n", codigo2); // Exibe o código da carta
     printf("O nome da cidade é: %s\n", cidade2); // Exibe o nome da cidade
     printf("A população é: %d\n", populacao2); // Exibe a população
-    printf("Á area é: %.2f\n", area2); // Exibe a área
-    printf("O pib é: %.2f\n", pib2); // Exibe o PIB
+    printf("Á area é: %.2f Km²\n", area2); // Exibe a área
+    printf("O pib é: %.2f Reais\n", pib2); // Exibe o PIB
     printf("O número de pontos turísticos é: %d\n", pontos2); // Exibe o número de pontos turísticos
+    printf("A densiadade populacional é: %.2f Hab/km²\n", densidade2); // Exibe a densidade populacional
+    printf("O pib per capita é: %.2f Reais\n", capita2); // Exibe o PIB per capita
     printf(("\n")); // pula uma linha
 
 
