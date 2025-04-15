@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <stdio.h> // Biblioteca padrão para funções de entrada e saída
+
 
 // Desafio Super Trunfo - Países
 
@@ -93,8 +94,107 @@ int main() {
     printf("O pib per capita é: %.2f Reais\n", capita2); // Exibe o PIB per capita
     printf(("\n")); // pula uma linha
 
+    // Ínicio do jogo
+
+    int  resultado1, resultado2;
+    char  primeiroatributo, segundoatributo;
 
 
+
+    printf("Bem vindo ao super trunfo!\n"); // Exibe uma mensagem de boas-vindas
+    printf("Escolha o primeiro atributo!\n"); // Exibe uma mensagem pedindo para escolher o primeiro atributo
+    printf("P. - População\n"); // Exibe a opção 1
+    printf("A. - Área\n"); // Exibe a opção 2
+
+    printf("Escolha a comparação:\n"); // Exibe uma mensagem pedindo para escolher a comparação
+    scanf(" %c", &primeiroatributo);
+    
+    
+    switch (primeiroatributo)
+
+    {
+
+    case 'P':
+    case 'p':
+
+        printf("Você escolheu a opção população!\n"); // Exibe a opção escolhida pelo usuário
+        resultado1 = populacao >= populacao2 ? 1 : 0; // Verifica se a população da carta 1 é maior que a da carta 2
+        break; // Sai do switch
+
+        case 'A':
+        case 'a':
+
+        printf("Você escolheu a opção área!\n"); // Exibe a opção escolhida pelo usuário
+        resultado1 = area >= area2 ? 1 : 0; // Verifica se a área da carta 1 é maior que a da carta 2
+    
+
+    default:
+        printf("Opção de jogo inválida!\n"); // Exibe uma mensagem de erro
+        break; // Sai do switch
+
+
+
+    }
+
+
+    printf("Escolha o segundo atributo!\n"); // Exibe uma mensagem pedindo para escolher o segundo atributo
+    printf("Atenção: O segundo atributo não pode ser o mesmo que o primeiro!\n"); // Exibe uma mensagem de aviso
+    printf("P. - População\n"); // Exibe a opção 1
+    printf("A. - Área\n"); // Exibe a opção 2
+
+
+    printf("Escolha a comparação: ");
+    scanf(" %c", &segundoatributo); // Lê o segundo atributo escolhido pelo usuário
+
+    if (primeiroatributo == segundoatributo) // Verifica se o segundo atributo é o mesmo que o primeiro
+    {
+        printf("Você escolheu o mesmo atributo!\n"); // Exibe uma mensagem de erro
+        
+    } else {
+
+          switch (segundoatributo)
+      {
+         
+
+         case 'A':
+         case 'a':
+
+              printf("Você escolheu a opção área!\n"); // Exibe a opção escolhida pelo usuário
+              resultado2 = area > area2 ? 1 : 0; // Verifica se a área da carta 1 é maior que a da carta 2
+              break; // Sai do switch
+
+        case 'P':
+        case 'p':
+            
+                printf("Você escolheu a opção população!\n"); // Exibe a opção escolhida pelo usuário
+                resultado2 = populacao > populacao2 ? 1 : 0; // Verifica se a população da carta 1 é maior que a da carta 2
+                break; // Sai do switch
+
+              
+         
+        default:
+              printf("Opção de jogo inválida!\n"); // Exibe uma mensagem de erro
+              break; // Sai do switch
+
+
+
+      }
+
+      if (resultado1 && resultado2) // Verifica se o resultado da comparação é verdadeiro
+      {
+          printf("Você ganhou!\n"); // Exibe uma mensagem de vitória
+      } else if (resultado1 != resultado2) // Verifica se o resultado da comparação é falso
+      {
+          printf("Você empatou!\n"); // Exibe uma mensagem de empate
+      } else {
+          printf("Você perdeu!\n"); // Exibe uma mensagem de derrota
+      }
+        
+
+
+
+
+    }
 
 
     return 0;
