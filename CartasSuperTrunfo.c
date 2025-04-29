@@ -47,7 +47,7 @@ int main() {
     printf(("\n")); // pula uma linha
 
 
-
+ 
 
 
 
@@ -182,12 +182,12 @@ int main() {
 
       if (resultado1 && resultado2) // Verifica se o resultado da comparação é verdadeiro
       {
-          printf("Você ganhou!\n"); // Exibe uma mensagem de vitória
+          printf("Você ganhou! Pois tanto a sua carta população: %d, quanto a sua carta Área: %.2f são maiores que as do oponente!" ,populacao,area); // Exibe uma mensagem de vitória
       } else if (resultado1 != resultado2) // Verifica se o resultado da comparação é falso
       {
-          printf("Você empatou!\n"); // Exibe uma mensagem de empate
+          printf("Você empatou! Pois tanto a sua carta População: %d, quanto a sua carta Área: %.2f possuem o mesmo valor que as do oponente!" ,populacao,area); // Exibe uma mensagem de empate
       } else {
-          printf("Você perdeu!\n"); // Exibe uma mensagem de derrota
+          printf("Você perdeu! Pois tanto a sua carta População: %d, quanto a sua carta Área: %.2f são menores que as do oponente!\n" ,populacao,area); // Exibe uma mensagem de derrota
       }
         
 
